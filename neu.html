@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Neu erstellen - Aufgaben</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/form.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <header>
+                <hgroup>
+                    <h1>Aufgaben</h1>
+                    <h2>Neu erstellen</h2>
+                </hgroup>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/">Übersicht</a>
+                        </li>
+
+                        <li class="active">
+                            <a href="neu.html">Neue Aufgabe</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <article>
+                    <form name="neueAufgabe" method="post" onsubmit="myApp.onFormSubmit(this.name)">
+                        <p>
+                            <label for="titel" class="required">Titel</label><br>
+                            <input
+                                    id="titel"
+                                    name="aufgabenTitel"
+                                    type="text"
+                                    required="required"
+                                    size="80"
+                                    maxlength="80"
+                                    placeholder="Geben Sie hier den Titel/die Bezeichnung der Aufgabe ein ..."
+                            >
+                        </p>
+                        <p>
+                            <input type="checkbox" name="erledigt"> Als erledigt markieren
+                        </p>
+                        <p class="button-bar">
+                            <input type="reset" name="reset" value="Zurücksetzen">
+                            <input type="submit" name="speichern" value="Speichern">
+                        </p>
+                    </form>
+                </article>
+            </main>
+            <footer>
+                <p>&copy; 2018 - MyApp GmbH</p>
+            </footer>
+        </div>
+    </div>
+    <script src="js/list.js"></script>
+</body>
+</html>

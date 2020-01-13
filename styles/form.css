@@ -1,0 +1,43 @@
+.wrapper > .container > main > article > form {
+    padding: 2em;
+}
+
+.wrapper > .container > main > article > form p:nth-child(1n+2) {
+    margin-top: 1.5rem;
+}
+
+.wrapper > .container > main > article > form .button-bar input {
+    width: 10em;
+    font-size: 1.1em;
+    border: 0;
+    border-radius: 0.1em;
+    padding: 0.2em;
+    cursor: pointer;
+}
+
+.wrapper > .container > main > article > form .button-bar input:hover {
+    color: #fff;
+}
+
+.wrapper > .container > main > article > form .button-bar input[type=reset] {
+    background: #cc0000;
+}
+
+.wrapper > .container > main > article > form .button-bar input[type=submit] {
+    float: right;
+    background: #00cc00;
+}
+
+label.required {
+    font-weight: bold;
+}
+
+label.required:after {
+    content: " *";
+    font-weight: bold;
+}
+
+label, input {
+    font-size: 1.1em;
+    max-width: 99%;
+}

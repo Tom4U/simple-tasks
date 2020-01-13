@@ -1,0 +1,35 @@
+.wrapper > .container > header > nav > ul {
+    background: #6495ed;
+    display: flex;
+}
+
+.wrapper > .container > header > nav > ul > li {
+    flex: auto;
+    text-align: center;
+    border-right: 1px solid #fff;
+    padding: 0.25rem;
+    cursor: pointer;
+}
+
+.wrapper > .container > header > nav > ul > li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.wrapper > .container > header > nav > ul > li:last-child {
+    border-right: none;
+}
+
+.wrapper > .container > header > nav > ul > li:hover,
+.wrapper > .container > header > nav > ul > li:hover a,
+.wrapper > .container > header > nav > ul > li:hover a:active,
+.wrapper > .container > header > nav > ul > li.active,
+.wrapper > .container > header > nav > ul > li.active a {
+    background: #74e5ff;
+    color: #cf5f30;
+}
+
+.wrapper > .container > header > nav > ul > li.active,
+.wrapper > .container > header > nav > ul > li.active a {
+    cursor: default;
+}

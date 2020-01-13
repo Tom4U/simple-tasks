@@ -1,0 +1,16 @@
+.wrapper > .container > main > article > ul > li > .task-title {
+    color: #333;
+    text-decoration: none;
+}
+
+.wrapper > .container > main > article > ul > li > input:checked + .task-title {
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+.wrapper > .container > main > article > ul > li > .delete-task {
+    margin-left: 5px;
+    font-weight: bold;
+    color: #ff0000;
+    cursor: pointer;
+}

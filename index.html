@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Übersicht - Aufgaben</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <header>
+                <hgroup>
+                    <h1>Aufgaben</h1>
+                    <h2>Übersicht</h2>
+                </hgroup>
+                <nav>
+                    <ul>
+                        <li class="active">
+                            <a href="index.html">Übersicht</a>
+                        </li>
+                        <li>
+                            <a href="neu.html">Neue Aufgabe</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <article>
+                    <ul id="taskList"></ul>
+                </article>
+            </main>
+            <footer>
+                <p>&copy; 2018 - MyApp GmbH</p>
+            </footer>
+        </div>
+    </div>
+    <script src="js/list.js"></script>
+    <script>
+        var taskList = new myApp.TaskList('taskList');
+        taskList.init();
+    </script>
+</body>
+</html>
